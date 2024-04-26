@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="icon" href="image.png">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Subscribe</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>LISTEN WITHOUT LIMITS</h1>
+            <h2>subscribe now and start listening</h2>
+        </div>
+        <div class="plans">
+            <div class="plan1 p">
+                <div class="one">
+                    <span>Free / 10 Days</span>
+                </div>
+                <div class="two">
+                    <div class="icon"><i class="fa-solid fa-check"></i></div>
+                    <p>Free</p>
+                </div>
+                <div class="three">
+                    <h1>Individual</h1>
+                    <h3>Free for 10 Days</h3>
+                    <h5>Free / 10 Days</h5>
+                </div>
+                <div class="off">
+                    <ul>
+                        <li>Play in single order</li>
+                        <li>No Download</li>
+                        <li>No Ad-free</li>
+                    </ul>
+                </div>
+                <div class="toget">
+                    <div id="plan1">
+                        <button id="plan1-button" onclick="selectPlan('plan1')">Get Individual</button>
+                    </div>
+                    <div id="processing-box">
+                        <span>Processing...</span>
+                    </div>
+
+                    <div id="payment-gateway">
+                        <div class="payment">
+                            <div class="pay1"><a href=""><img src="google.png" alt=""></a></div>
+                            <div class="pay2 "><a href=""><img src="social.png" alt=""></a></div>
+                            <div class="pay3"><a href=""><img src="card.png" alt=""></a></div>
+                            <div class="pay4"><a href=""><img src="visa.png" alt=""></a></div>
+                        </div>
+                        <div class="pay-button">
+                            <button onclick="completePayment()" class="Complete">Complete Payment</button>
+                            <button id="cancel" onclick="cancelPayment()">Cancel</button>
+                        </div>
+                    </div>
+
+                    <div id="success-message">
+                        <div class="done">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <span>Payment Successful</span>
+                    </div>
+
+                    <div id="already-activated-message">
+                        <div class="alert"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <span>Already activated a plan</span>
+                    </div>
+
+                    <div id="backdrop"></div>
+
+                </div>
+                <div class="description">
+                    <p>Free for 10 Days, then 10 days after. Offer only available if you haven't tried Free before <a
+                            href="">Terms apply.</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="plan2 p">
+                <div class="one">
+                    <span>₹149 / 2 months</span>
+                </div>
+                <div class="two">
+                    <div class="icon"><i class="fa-solid fa-crown"></i></div>
+                    <p>Premium</p>
+                </div>
+                <div class="three">
+                    <h1>Duo</h1>
+                    <h3>₹149 for 2 months</h3>
+                    <h5>₹149 / month after</h5>
+                </div>
+                <div class="off">
+                    <ul>
+                        <li>2 Premium account</li>
+                        <li>Cancel anytime</li>
+                        <li>Subscribe or one-time payment</li>
+                    </ul>
+                </div>
+                <div class="toget">
+                    <div id="plan2">
+                        <button id="plan2-button" onclick="selectPlan('plan2')">Get Individual</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>₹149 for 2 months, then ₹149 / month after. Offer only available if you haven't tried Premium
+                        before
+                        <a href="">Terms apply.</a>
+                    </p>
+                </div>
+            </div>
+            <div class="plan3 p">
+                <div class="one">
+                    <span>₹179 / 2 months</span>
+                </div>
+                <div class="two">
+                    <div class="icon"><i class="fa-solid fa-crown"></i></div>
+                    <p>Premium</p>
+                </div>
+                <div class="three">
+                    <h1>Family</h1>
+                    <h3>₹179 for 2 months</h3>
+                    <h5>₹179 / month after</h5>
+                </div>
+                <div class="off">
+                    <ul>
+                        <li>Up to 6 Premium account</li>
+                        <li>Cancel anytime</li>
+                        <li>Control content marked as explictit</li>
+                    </ul>
+                </div>
+                <div class="toget">
+                    <div id="plan3">
+                        <button id="plan3-button" onclick="selectPlan('plan3')">Get Individual</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>₹179 for 2 months, then ₹179 / month after. Offer only available if you haven't tried Premium
+                        before
+                        <a href="">Terms apply.</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="spec">
+            <h1>All premium plans include</h1>
+            <div class="item">
+                <ul>
+                    <li>Ad-free music listening</li>
+                    <li>Download to listen offline</li>
+                    <li>Play songs in any order</li>
+                    <li>High audio quality</li>
+                    <li>Listen with friends in real time</li>
+                    <li>Organize listening queue</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="pay">
+            <h2>Pay in various way</h2>
+            <div class="align">
+                <div class="pay1 one"><a href=""><img src="google.png" alt=""></a></div>
+                <div class="pay2 one"><a href=""><img src="social.png" alt=""></a></div>
+                <div class="pay3 one"><a href=""><img src="card.png" alt=""></a></div>
+                <div class="pay4 one"><a href=""><img src="visa.png" alt=""></a></div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c5494f3f35.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
